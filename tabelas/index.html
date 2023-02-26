@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    table td,
+    table th {
+      border: 1px solid #ccc;
+      padding: 5px;
+      text-align: left;
+    }
+
+    table thead,
+    table tfoot {
+      background-color: #ddd;
+    }
+
+    table tfoot {
+      font-size: 14px;
+    }
+
+    table caption {
+      text-align: right;
+      font-style: italic;
+      font-size: 14px;
+      caption-side: bottom;
+      margin: 5px 0;
+    }
+
+    table tfoot td {
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Lorem ipsum, dolor voluptate, quasi exercitationem!</p>
+
+  <table>
+    <caption>Descrição</caption>
+    <thead>
+      <tr>
+        <th>Titulo 1</th>
+        <th>Titulo 2</th>
+        <th>Titulo 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Teste 1</td>
+        <td colspan="2">2 colunas</td>
+      </tr>
+      <tr>
+        <td>Teste 1</td>
+        <td>Teste 2</td>
+        <td>Teste 3</td>
+      </tr>
+      <tr>
+        <td>Teste 1</td>
+        <td>Teste 2</td>
+        <td>Teste 3</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Foot 1</td>
+        <td>Foot 2</td>
+        <td>Foot 3</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
+</html>

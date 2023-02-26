@@ -54,4 +54,45 @@ body div section h1 {
   color: blue;
 }
 
+/* Irmãos (adjacent sibling selector): Seleciona 1 elemento */
+.paizao h1+p {
+  color: rgb(16, 149, 206); /* Seleciona um 'p' que venha logo depois de um h1 */
+}
+
+/* General sibling selector: Seleciona todos os elementos que vierem após a tag informada */
+.paizao h1~p {
+  color: rgb(195, 3, 233); /* Seleciona todos os 'p' que vierem depois de um h1 */
+}
+
+/* Atributo */ 
+/* Sem valor */
+[meu-atributo] {
+  color:rgb(27, 195, 52);
+}
+
+/* Com valor (só funciona se o valor for igual) */
+[meu-atributo="valor"] {
+  color:rgb(254, 246, 2);
+}
+
+/* Que tenha o valor */
+[meu-atributo~="valor2"] {
+  color:rgb(2, 225, 254);
+}
+
+/* Começa com */
+[meu-atributo^="valor12345"] {
+  color:rgb(82, 2, 254);
+}
+
+/* Termina com */
+[meu-atributo$="terminei"] {
+  color:rgba(254, 2, 241, 0.603);
+}
+
+/* Contém */
+[meu-atributo*="alo oi"] {
+  color:rgba(15, 14, 15, 0.603);
+}
+
 /* Id */

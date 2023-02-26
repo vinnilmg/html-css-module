@@ -1,0 +1,84 @@
+a {
+  color: darkorange;
+}
+
+.heading {
+  transition: all 1s ease-in-out; /* Controla os efeitos */
+}
+
+/* Pseudo-classes */
+
+/* Links nao visitados */
+a:link {
+  color: rgb(6, 238, 83);
+}
+
+/* Links ja visitados */
+a:visited {
+  color: rgb(173, 34, 178);
+}
+
+/* Links que estão sendo clicados */
+a:active {
+  background: red;
+  color: white;
+  text-decoration: none;
+}
+
+/* Passar o mouse sobre o elemento */
+.heading:hover {
+  background: red;
+}
+
+a:hover {
+  background: rgb(84, 78, 83);
+  color: white;
+  text-decoration: none;
+}
+
+/* Ao 'focar' em um input */
+input:focus {
+  box-shadow: 0 0 15px black;
+  outline: none;
+  border: 3px solid black;
+}
+
+/* Inputs desabilitados */
+input:disabled {
+  background: rebeccapurple;
+  cursor: not-allowed;
+}
+
+/* Inputs habilitados */
+input:enabled {
+  background: red;
+}
+
+/* Inputs checkados */
+input:checked {
+  width: 30px;
+  height: 30px;
+}
+
+/* Utilizando a pseudo-classe + adjacent sibling selector  */
+input:checked + p {
+  font-size: 20px;
+  font-style: italic;
+  background-color: green;
+}
+
+/* Seleção de filhos */
+/* 1° filho */
+.pai .lista li:first-child {
+  background: blue;
+}
+
+/* último filho */
+.pai .lista li:last-child {
+  background: pink;
+}
+
+/* Inputs obrigatórios */
+input:required {
+  border: 2px dashed rgb(15, 15, 15);
+}

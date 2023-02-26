@@ -54,7 +54,8 @@ body div section h1 {
   color: blue;
 }
 
-/* Irmãos (adjacent sibling selector): Seleciona 1 elemento */
+/* Irmãos */
+/* Adjacent sibling selector: Seleciona 1 elemento */
 .paizao h1+p {
   color: rgb(16, 149, 206); /* Seleciona um 'p' que venha logo depois de um h1 */
 }
@@ -94,5 +95,3 @@ body div section h1 {
 [meu-atributo*="alo oi"] {
   color:rgba(15, 14, 15, 0.603);
 }
-
-/* Id */

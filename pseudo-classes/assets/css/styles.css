@@ -82,3 +82,14 @@ input:checked + p {
 input:required {
   border: 2px dashed rgb(15, 15, 15);
 }
+
+/* Negação */
+/* Seleciona todos os 'p' que não tiverem a classe .azul-nao */
+p:not(.azul-nao) {
+  color: blue; 
+}
+
+/* Seleciona o 'p' que vier após um input NAO CHECKADO */
+input:not(:checked) + p {
+  background-color: yellow;
+}

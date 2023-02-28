@@ -93,3 +93,23 @@ p:not(.azul-nao) {
 input:not(:checked) + p {
   background-color: yellow;
 }
+
+/* Seleção de irmãos estipulando indice específico */
+ul.selecao-child li:nth-child(1) {
+  background-color: red;
+}
+
+/* Selecionado somente os pares */
+ul.selecao-child li:nth-child(even) {
+  background-color: rebeccapurple;
+}
+
+/* Selecionado somente os ímpares */
+ul.selecao-child li:nth-child(odd) {
+  background-color: yellow;
+}
+
+/* Selecionado de 3 em 3 */
+ul.selecao-child li:nth-child(3n) {
+  background-color: darkgreen;
+}

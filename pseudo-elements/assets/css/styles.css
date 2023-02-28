@@ -1,0 +1,37 @@
+/* Insere um pseudo-elemento APÓS a tag informada */
+ul li::after {
+  content: ' - AFTER';
+  background: red;
+  color: white;
+}
+
+/* Insere um pseudo-elemento ANTES da tag informada */
+ul li::before {
+  content: 'BEFORE - ';
+  background: red;
+  color: white;
+}
+
+ /* Pega a 1° letra */
+p::first-letter {
+  font-size: 100px;
+  display: block;
+  float: left;
+  margin: 0 10px 0 10px;
+}
+
+/* Pega a 1° linha */
+p::first-line {
+  background: yellow;
+}
+
+/* Aplica o pseudo-elemento no que for selecionado */
+::selection {
+  background: purple;
+  color: white;
+}
+
+/* Aplica no placeholder do elemento */
+::placeholder {
+  color: red;
+}

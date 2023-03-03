@@ -1,6 +1,6 @@
 .texto {
   background: rebeccapurple;
-  overflow: auto; /* Cria uma bala somente se ultrapassar */
+  overflow: auto; /* Cria uma barra somente se ultrapassar */
   width: 100%;
   height: 200px;
   max-width: 600px; /* limita a quantidade máxima */

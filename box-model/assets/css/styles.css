@@ -1,0 +1,14 @@
+.texto {
+  background: rebeccapurple;
+  overflow: auto; /* Cria uma bala somente se ultrapassar */
+  width: 100%;
+  height: 200px;
+  max-width: 600px; /* limita a quantidade máxima */
+  max-height: 100%;
+  min-width: 0;
+  min-height: 100px; /* Controla o mínimo mesmo se nao houver conteúdo */
+  margin: 0 auto 20px auto; /* ajuste automatico pra ficar no centro da tela */
+  padding: 30px;
+  border: 5px solid black;
+  box-sizing: border-box;
+}

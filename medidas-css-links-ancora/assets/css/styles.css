@@ -1,0 +1,42 @@
+/*
+Tamanhos CSS
+Medidas absolutas x Medidas relativas
+https://www.w3schools.com/cssref/css_units.php
+
+	Algumas medidas relativas:
+	- em: baseado no elemento pai mais próximo
+	- rem: baseado no elemento root do documento
+	- vw: baseado na largura da viewport (0-100)
+	- vh: baseado na altura da viewport (0-100)
+	- %: baseado no elemento pai
+
+Links âncoras
+- Links que enviam pra ids dentro da mesma página.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /* transforma o tamanho da font para 10 */
+  scroll-behavior: smooth; /* Muda a forma de 'rolar' */
+}
+
+.pai {
+  background: purple;
+  height: 100vh; /* Pega a altura da viewport inteira */
+}
+
+.div-dois {
+  background: turquoise;
+}
+
+.div-tres {
+  background: red;
+}
+
+p {
+  font-size: 2rem; /* 30px */
+}

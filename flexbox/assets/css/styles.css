@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex; /* Flexbox */
+  /* Ao utilizar "display: flex", as propriedades abaixo já são settadas: */
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  /* ---- */
+  background:rebeccapurple;
+  height: 500px;
+  gap: 30px; /* Espaçamento entre cada item */
+}
+
+.flex-item {
+  width: 100%;
+  background: royalblue;
+  margin: 10px;
+}

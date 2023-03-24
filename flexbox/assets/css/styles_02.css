@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  background: gray;
+  flex-flow: row wrap; /* Atalho para flex-direction e flex-wrap*/
+}
+
+.flex-item {
+  background: orange;
+  width: 32%;
+  height: 200px;
+  margin-bottom: 2%;
+  /*flex-basis: 320px; /* Como se fosse um max-width */
+  /*flex-grow: 1; /* Permite ou não distribuir o espaço restante entre os elementos e os alinha conforme o tamanho da tela */
+  /*flex-shrink: 1; /* Permite que o elemento diminua de tamanho ou não */
+  /* Atalho para flex-basis | flex-grow | flex-shrink */
+  flex: 1 1 320px; /* Ordem: {grow} {shrink} {basis} */
+}
+
+/* Diferenciando as propriedades flex somente para o segundo elemento*/
+.flex-item:nth-child(2) {
+  background: purple;
+  flex: 10 1 320px;
+}

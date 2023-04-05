@@ -15,7 +15,11 @@ body {
   margin: 0 auto; /* centro */
   /*grid-template-columns: repeat(3, 1fr); /* configuracao das colunas do grid | fr: proporcional a tela */
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 30px;
+  
+  /* GAP */
+  gap: 30px 50px;
+  /*row-gap: 20px;
+  column-gap: 10px;*/
 }
 
 .grid div {
